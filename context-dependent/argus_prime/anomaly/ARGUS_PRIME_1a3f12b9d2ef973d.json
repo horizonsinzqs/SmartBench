@@ -1,0 +1,281 @@
+{
+  "id": "ARGUS_PRIME_1a3f12b9d2ef973d",
+  "label": "anomaly",
+  "description": "On a autumn weekend during the evening. the system monitored 49 events across 10 devices within 3 hours. Key activities include: door/window state changes, lighting control. A total of 21 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: user_state - activity_sleep_conflict\n Time period: evening, Season: autumn\n\n2. [EVIDENCE]\n Evidence 1: At 21:33, sleepConfidence indicates high sleep (sleepConfidence=95%), but activity state reports an active state ('walking') near the same time.\n - Related events: 2\n - Confidence: 90%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 90%",
+  "context": {
+    "occupancy_type": "single_room_shared_flat",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-10-23T21:20:37.949256+00:00",
+      "device": "phone.activity",
+      "status": "walking"
+    },
+    {
+      "timestamp": "2021-10-23T21:20:37.949381+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "1"
+    },
+    {
+      "timestamp": "2021-10-23T21:21:42.327166+00:00",
+      "device": "weather.homeLocation",
+      "status": "partlycloudy"
+    },
+    {
+      "timestamp": "2021-10-23T21:24:32.188118+00:00",
+      "device": "phone.activity",
+      "status": "still"
+    },
+    {
+      "timestamp": "2021-10-23T21:26:25.850257+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-23T21:27:26.431744+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T21:33:28.360603+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-10-23T21:34:30.558056+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T21:38:52.882361+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T21:44:00.244512+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "23"
+    },
+    {
+      "timestamp": "2021-10-23T21:47:02.365673+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T21:54:17.911770+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "77"
+    },
+    {
+      "timestamp": "2021-10-23T21:56:42.303831+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:04:49.271103+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "70"
+    },
+    {
+      "timestamp": "2021-10-23T22:08:54.017354+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:14:49.766935+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:14:51.353110+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "77"
+    },
+    {
+      "timestamp": "2021-10-23T22:24:51.478451+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:24:52.800380+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "90"
+    },
+    {
+      "timestamp": "2021-10-23T22:25:17.615452+00:00",
+      "device": "weather.town",
+      "status": "sunny"
+    },
+    {
+      "timestamp": "2021-10-23T22:25:42.349334+00:00",
+      "device": "weather.homeLocation",
+      "status": "sunny"
+    },
+    {
+      "timestamp": "2021-10-23T22:43:03.651220+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-23T22:43:03.667065+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-23T22:44:02.520880+00:00",
+      "device": "phone.activity",
+      "status": "walking"
+    },
+    {
+      "timestamp": "2021-10-23T22:44:08.017185+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:47:40.178046+00:00",
+      "device": "rolo.position",
+      "status": "closed"
+    },
+    {
+      "timestamp": "2021-10-23T22:48:07.691311+00:00",
+      "device": "phone.activity",
+      "status": "still"
+    },
+    {
+      "timestamp": "2021-10-23T22:48:09.764123+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:49:15.806314+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "3"
+    },
+    {
+      "timestamp": "2021-10-23T22:50:40.681033+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-23T22:51:05.312877+00:00",
+      "device": "phone.charging",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-23T22:51:16.799424+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-23T22:51:39.322926+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:55:39.145719+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:55:55.364078+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-23T22:55:55.384201+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-23T22:56:53.073162+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-23T22:56:53.093854+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-23T22:57:56.859170+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T22:58:00.566290+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "37"
+    },
+    {
+      "timestamp": "2021-10-23T23:01:02.877429+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T23:05:02.890629+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T23:06:09.730238+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "63"
+    },
+    {
+      "timestamp": "2021-10-23T23:12:08.480518+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "87"
+    },
+    {
+      "timestamp": "2021-10-23T23:13:14.290914+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T23:18:05.037012+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-10-23T23:20:22.708990+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T23:24:09.796347+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-23T23:28:04.940632+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    }
+  ],
+  "evidence_devices": [
+    "phone.activity",
+    "phone.sleepConfidence"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_92c21c2d37643e6f",
+  "paired_id": "ARGUS_PRIME_27c03db27aed6fec",
+  "anomaly_types": [
+    "user_state"
+  ],
+  "anomaly_details": [
+    {
+      "type": "user_state",
+      "subtype": "activity_sleep_conflict"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home1",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "state_transition"
+    ]
+  }
+}

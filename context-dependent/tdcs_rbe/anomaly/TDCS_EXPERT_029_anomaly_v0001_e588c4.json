@@ -1,0 +1,691 @@
+{
+  "id": "TDCS_EXPERT_029_anomaly_v0001_e588c4",
+  "label": "anomaly",
+  "description": "Sudden collapse while cooking lunch - stove left on + silence (core, 1d)",
+  "reasoning": "Observation window: 2026-03-04T00:00:00 to 2026-03-04T23:00:00 (1 day(s)); context: season=Winter, weather=Cloudy, occupancy=single_adult_work_from_home; total_events=129; top_rooms=basement,living_room. Evidence: living_room_temp_sensor (living_room): 24 events; range 19.9C→21.6C (min @ 2026-03-04T09:00:00, max @ 2026-03-04T23:00:00); last 21.6C @ 2026-03-04T23:00:00 | living_room_temp_sensor (living_room): 24 events; range 19.9C→21.6C (min @ 2026-03-04T09:00:00, max @ 2026-03-04T23:00:00); last 21.6C @ 2026-03-04T23:00:00 | main_power_meter (basement): 24 events; range 120.0W→2215.0W (min @ 2026-03-04T00:00:00, max @ 2026-03-04T13:00:00); last 2215W @ 2026-03-04T23:00:00 | basement_hvac (basement): 14 events; first HEATING @ 2026-03-04T02:00:00; last OFF @ 2026-03-04T23:00:00 Interpretation: several device streams exhibit trajectories or state patterns that deviate from what the configured routine and cross-device dependencies would typically produce. Potential impact: sustained misbehavior in environmental control, security, or power management can reduce comfort, increase energy use, or create safety risks.",
+  "context": {
+    "occupancy_type": "single_adult_work_from_home",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "living_room_thermostat",
+      "status": "SETPOINT:21.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "bedroom_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "bathroom_thermostat",
+      "status": "SETPOINT:23.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "kitchen_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "basement_thermostat",
+      "status": "SETPOINT:15.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "garage_thermostat",
+      "status": "SETPOINT:18.0C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.9C"
+    },
+    {
+      "timestamp": "2026-03-04T00:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2026-03-04T01:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2026-03-04T01:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.7C"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T02:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T03:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.5C"
+    },
+    {
+      "timestamp": "2026-03-04T03:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T03:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T03:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T04:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.0C"
+    },
+    {
+      "timestamp": "2026-03-04T04:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T04:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T04:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T04:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2026-03-04T05:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.2C"
+    },
+    {
+      "timestamp": "2026-03-04T05:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T05:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T05:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.8C"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T06:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T07:00:00",
+      "device": "bedroom_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2026-03-04T07:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.3C"
+    },
+    {
+      "timestamp": "2026-03-04T07:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T07:00:00",
+      "device": "main_power_meter",
+      "status": "2135W"
+    },
+    {
+      "timestamp": "2026-03-04T07:13:58.574494",
+      "device": "bedroom_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.7C"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T08:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T09:00:00",
+      "device": "bedroom_computer",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2026-03-04T09:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "19.9C"
+    },
+    {
+      "timestamp": "2026-03-04T09:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.7C"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T10:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T10:02:06.257349",
+      "device": "bedroom_computer",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T11:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.5C"
+    },
+    {
+      "timestamp": "2026-03-04T11:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T11:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "kitchen_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "kitchen_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "kitchen_fridge",
+      "status": "OPEN"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.8C"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:00",
+      "device": "main_power_meter",
+      "status": "2135W"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:06",
+      "device": "kitchen_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2026-03-04T12:00:24",
+      "device": "kitchen_fridge",
+      "status": "CLOSED"
+    },
+    {
+      "timestamp": "2026-03-04T12:05:00",
+      "device": "kitchen_range_hood",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2026-03-04T12:13:00",
+      "device": "kitchen_light_state_log",
+      "status": "PERSISTED:ON"
+    },
+    {
+      "timestamp": "2026-03-04T12:13:00",
+      "device": "kitchen_motion_sensor_state_log",
+      "status": "PERSISTED:NO_MOTION"
+    },
+    {
+      "timestamp": "2026-03-04T12:13:00",
+      "device": "kitchen_range_hood_state_log",
+      "status": "PERSISTED:ON"
+    },
+    {
+      "timestamp": "2026-03-04T13:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.1C"
+    },
+    {
+      "timestamp": "2026-03-04T13:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T13:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T13:12:00",
+      "device": "living_room_thermostat",
+      "status": "21.5C"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.8C"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T14:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T14:12:00",
+      "device": "living_room_thermostat",
+      "status": "21.5C"
+    },
+    {
+      "timestamp": "2026-03-04T15:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.4C"
+    },
+    {
+      "timestamp": "2026-03-04T15:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T15:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T15:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T16:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.0C"
+    },
+    {
+      "timestamp": "2026-03-04T16:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T16:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T16:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T16:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T17:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2026-03-04T17:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T17:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T17:00:00",
+      "device": "main_power_meter",
+      "status": "215W"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.6C"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T18:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T19:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.5C"
+    },
+    {
+      "timestamp": "2026-03-04T19:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T19:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.0C"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T20:00:00",
+      "device": "main_power_meter",
+      "status": "215W"
+    },
+    {
+      "timestamp": "2026-03-04T21:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2026-03-04T21:00:00",
+      "device": "basement_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T21:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.6C"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2026-03-04T22:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    },
+    {
+      "timestamp": "2026-03-04T23:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.6C"
+    },
+    {
+      "timestamp": "2026-03-04T23:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2026-03-04T23:00:00",
+      "device": "main_power_meter",
+      "status": "2215W"
+    }
+  ],
+  "evidence_devices": [
+    "bedroom_computer",
+    "kitchen_fridge",
+    "kitchen_hvac",
+    "kitchen_light",
+    "kitchen_light_state_log",
+    "kitchen_motion_sensor",
+    "kitchen_motion_sensor_state_log",
+    "kitchen_range_hood",
+    "kitchen_range_hood_state_log",
+    "living_room_temp_sensor",
+    "living_room_thermostat",
+    "main_power_meter"
+  ],
+  "pair_id": "TDCS_PAIR_737d153f815cd860",
+  "paired_id": "TDCS_EXPERT_029_normal_v0001_1e453e",
+  "anomaly_types": [
+    "occupant_incapacitation"
+  ],
+  "anomaly_details": [
+    {
+      "type": "occupant_incapacitation",
+      "location": "kitchen",
+      "event": "collapse",
+      "onset_time": "12:12",
+      "detection_window_hours": 3
+    }
+  ],
+  "metadata": {
+    "dataset": "tdcs_rbe",
+    "eval_id": "EVAL_ABEF9360DC02",
+    "template_id": "TDCS_EXPERT_029",
+    "variant": 1
+  }
+}

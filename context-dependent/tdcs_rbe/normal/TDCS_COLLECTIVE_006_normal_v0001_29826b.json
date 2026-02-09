@@ -1,0 +1,223 @@
+{
+  "id": "TDCS_COLLECTIVE_006_normal_v0001_29826b",
+  "label": "normal",
+  "description": "Counterfactual paired sample of TDCS_COLLECTIVE_006 (same routine without injected faults)",
+  "reasoning": "Observation window: 2025-09-28T00:00:00 to 2025-09-28T23:00:00 (1 day(s)); context: season=Autumn, weather=Windy, occupancy=family_on_vacation; total_events=40; top_rooms=basement,living_room. Evidence: main_power_meter (basement): 24 events; range 120.0W→2120.0W (min @ 2025-09-28T00:00:00, max @ 2025-09-28T06:00:00); last 2120W @ 2025-09-28T23:00:00 | bathroom_hvac (bathroom): 3 events; first HEATING @ 2025-09-28T06:00:00; last HEATING @ 2025-09-28T21:00:00 | living_room_hvac (living_room): 3 events; first HEATING @ 2025-09-28T06:00:00; last HEATING @ 2025-09-28T22:00:00 Interpretation: device transitions and sensor trajectories form a coherent household routine without contradictions in timing, room-device mapping, or physical ranges. Benign exclusion: short-lived sensor noise and sparse reporting can create edge-looking readings, but the overall multi-device pattern remains self-consistent.",
+  "context": {
+    "occupancy_type": "family_on_vacation",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "living_room_thermostat",
+      "status": "SETPOINT:21.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "bedroom_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "bathroom_thermostat",
+      "status": "SETPOINT:22.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "kitchen_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "basement_thermostat",
+      "status": "SETPOINT:15.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "garage_thermostat",
+      "status": "SETPOINT:18.0C"
+    },
+    {
+      "timestamp": "2025-09-28T00:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T01:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T02:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T03:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T04:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T05:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T06:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T06:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T06:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T06:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T06:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T07:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T08:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T09:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T10:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T11:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-09-28T11:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-09-28T11:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-09-28T11:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-09-28T11:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T12:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T13:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T14:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T15:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T16:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T17:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T18:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T19:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T20:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-09-28T21:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T21:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T22:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-09-28T22:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-09-28T23:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    }
+  ],
+  "evidence_devices": [],
+  "pair_id": "TDCS_PAIR_f006d48dd1de3b3e",
+  "paired_id": "TDCS_COLLECTIVE_006_anomaly_v0001_50a64f",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "tdcs_rbe",
+    "eval_id": "EVAL_5428F4CC7986",
+    "template_id": "TDCS_COLLECTIVE_006",
+    "variant": 1
+  }
+}

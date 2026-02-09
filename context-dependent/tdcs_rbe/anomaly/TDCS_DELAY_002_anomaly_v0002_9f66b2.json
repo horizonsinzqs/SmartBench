@@ -1,0 +1,1184 @@
+{
+  "id": "TDCS_DELAY_002_anomaly_v0002_9f66b2",
+  "label": "anomaly",
+  "description": "Automation rule execution delay - motion to light 30s delay",
+  "reasoning": "Observation window: 2025-11-17T00:00:00 to 2025-12-02T00:00:00 (1 day(s)); context: season=Autumn, weather=Cloudy, occupancy=single_adult_office_worker; total_events=228; top_rooms=bedroom,living_room. Evidence: living_room_motion_sensor (living_room): 8 events; first MOTION @ 2025-11-17T18:30:00; last NO_MOTION @ 2025-11-17T20:45:06 | entrance_motion_sensor (entrance): 4 events; first MOTION @ 2025-11-17T08:30:00; last NO_MOTION @ 2025-11-17T18:00:12 | living_room_light (living_room): 4 events; first ON @ 2025-11-17T18:30:30; last OFF @ 2025-11-17T21:42:12.076243 | entrance_light (entrance): 2 events; first ON @ 2025-11-17T18:00:30; last OFF @ 2025-11-17T18:04:27.690239 | basement_humidity_sensor (basement): 24 events; range 44.7%→67.1% (min @ 2025-11-17T00:00:00, max @ 2025-11-17T21:00:00); last 62.5% @ 2025-11-17T23:00:00 | bedroom_co2_sensor (bedroom): 24 events; range 400.0ppm→1827.0ppm (min @ 2025-11-17T21:00:00, max @ 2025-11-17T06:00:00); last 1002ppm @ 2025-11-17T23:00:00 Interpretation: entrance_motion_sensor reports state updates and entrance_light reports states, but the two streams are weakly coupled in time, suggesting a control/automation mismatch or actuator malfunction. Potential impact: sustained misbehavior in environmental control, security, or power management can reduce comfort, increase energy use, or create safety risks.",
+  "context": {
+    "occupancy_type": "single_adult_office_worker",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "living_room_thermostat",
+      "status": "SETPOINT:21.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "bedroom_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "bathroom_thermostat",
+      "status": "SETPOINT:22.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "kitchen_thermostat",
+      "status": "SETPOINT:20.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "basement_thermostat",
+      "status": "SETPOINT:15.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "garage_thermostat",
+      "status": "SETPOINT:18.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.0C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.1C"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "412ppm"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "44.7%"
+    },
+    {
+      "timestamp": "2025-11-17T00:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.2C"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.0C"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1005ppm"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "46.4%"
+    },
+    {
+      "timestamp": "2025-11-17T01:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.4C"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.7C"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1350ppm"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "47.9%"
+    },
+    {
+      "timestamp": "2025-11-17T02:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.2C"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.2C"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1578ppm"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "50.3%"
+    },
+    {
+      "timestamp": "2025-11-17T03:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.8C"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.5C"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1706ppm"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "51.5%"
+    },
+    {
+      "timestamp": "2025-11-17T04:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.5C"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1769ppm"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "50.8%"
+    },
+    {
+      "timestamp": "2025-11-17T05:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.6C"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.2C"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1827ppm"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "52.8%"
+    },
+    {
+      "timestamp": "2025-11-17T06:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bedroom_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bedroom_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.2C"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.7C"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1511ppm"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "52.0%"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:00",
+      "device": "main_power_meter",
+      "status": "2135W"
+    },
+    {
+      "timestamp": "2025-11-17T07:00:30",
+      "device": "bedroom_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:14:21.290142",
+      "device": "bedroom_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:15:00",
+      "device": "bathroom_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T07:15:00",
+      "device": "bathroom_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:15:06",
+      "device": "bathroom_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:15:30",
+      "device": "bathroom_water_flow",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T07:17:08.912749",
+      "device": "bathroom_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:30:00",
+      "device": "kitchen_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T07:30:00",
+      "device": "kitchen_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:30:00",
+      "device": "kitchen_fridge",
+      "status": "OPEN"
+    },
+    {
+      "timestamp": "2025-11-17T07:30:06",
+      "device": "kitchen_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T07:30:18",
+      "device": "kitchen_fridge",
+      "status": "CLOSED"
+    },
+    {
+      "timestamp": "2025-11-17T07:33:00",
+      "device": "kitchen_microwave",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T07:35:00",
+      "device": "kitchen_microwave",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T07:54:04.942480",
+      "device": "kitchen_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "alarm_panel",
+      "status": "ARMED_AWAY"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.0C"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.0C"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1076ppm"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "53.2%"
+    },
+    {
+      "timestamp": "2025-11-17T08:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:00",
+      "device": "entrance_door_sensor",
+      "status": "OPEN"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:00",
+      "device": "entrance_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:00",
+      "device": "entrance_smart_lock",
+      "status": "UNLOCKED"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:12",
+      "device": "entrance_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:18",
+      "device": "entrance_smart_lock",
+      "status": "LOCKED"
+    },
+    {
+      "timestamp": "2025-11-17T08:30:30",
+      "device": "entrance_door_sensor",
+      "status": "CLOSED"
+    },
+    {
+      "timestamp": "2025-11-17T09:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "17.0C"
+    },
+    {
+      "timestamp": "2025-11-17T09:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "16.6C"
+    },
+    {
+      "timestamp": "2025-11-17T09:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "806ppm"
+    },
+    {
+      "timestamp": "2025-11-17T09:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "55.7%"
+    },
+    {
+      "timestamp": "2025-11-17T09:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T10:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "17.1C"
+    },
+    {
+      "timestamp": "2025-11-17T10:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "16.9C"
+    },
+    {
+      "timestamp": "2025-11-17T10:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "651ppm"
+    },
+    {
+      "timestamp": "2025-11-17T10:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "58.0%"
+    },
+    {
+      "timestamp": "2025-11-17T10:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T11:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "18.2C"
+    },
+    {
+      "timestamp": "2025-11-17T11:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "18.0C"
+    },
+    {
+      "timestamp": "2025-11-17T11:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "551ppm"
+    },
+    {
+      "timestamp": "2025-11-17T11:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "62.5%"
+    },
+    {
+      "timestamp": "2025-11-17T11:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T12:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "19.1C"
+    },
+    {
+      "timestamp": "2025-11-17T12:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.1C"
+    },
+    {
+      "timestamp": "2025-11-17T12:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "491ppm"
+    },
+    {
+      "timestamp": "2025-11-17T12:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "60.1%"
+    },
+    {
+      "timestamp": "2025-11-17T12:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T13:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.1C"
+    },
+    {
+      "timestamp": "2025-11-17T13:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.6C"
+    },
+    {
+      "timestamp": "2025-11-17T13:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "456ppm"
+    },
+    {
+      "timestamp": "2025-11-17T13:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "62.2%"
+    },
+    {
+      "timestamp": "2025-11-17T13:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T14:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.3C"
+    },
+    {
+      "timestamp": "2025-11-17T14:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2025-11-17T14:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "430ppm"
+    },
+    {
+      "timestamp": "2025-11-17T14:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "63.9%"
+    },
+    {
+      "timestamp": "2025-11-17T14:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T15:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.5C"
+    },
+    {
+      "timestamp": "2025-11-17T15:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.3C"
+    },
+    {
+      "timestamp": "2025-11-17T15:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "413ppm"
+    },
+    {
+      "timestamp": "2025-11-17T15:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "62.2%"
+    },
+    {
+      "timestamp": "2025-11-17T15:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T16:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.0C"
+    },
+    {
+      "timestamp": "2025-11-17T16:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.7C"
+    },
+    {
+      "timestamp": "2025-11-17T16:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "417ppm"
+    },
+    {
+      "timestamp": "2025-11-17T16:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "62.4%"
+    },
+    {
+      "timestamp": "2025-11-17T16:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T17:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "19.2C"
+    },
+    {
+      "timestamp": "2025-11-17T17:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.4C"
+    },
+    {
+      "timestamp": "2025-11-17T17:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "412ppm"
+    },
+    {
+      "timestamp": "2025-11-17T17:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "63.3%"
+    },
+    {
+      "timestamp": "2025-11-17T17:00:00",
+      "device": "main_power_meter",
+      "status": "120W"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "entrance_smart_lock",
+      "status": "UNLOCKED"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "entrance_door_sensor",
+      "status": "OPEN"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "entrance_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "alarm_panel",
+      "status": "DISARMED"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "18.6C"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "18.4C"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "407ppm"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "66.0%"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "basement_hvac",
+      "status": "COOLING"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:00",
+      "device": "main_power_meter",
+      "status": "2635W"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:12",
+      "device": "entrance_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:30",
+      "device": "entrance_smart_lock",
+      "status": "LOCKED"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:30",
+      "device": "entrance_door_sensor",
+      "status": "CLOSED"
+    },
+    {
+      "timestamp": "2025-11-17T18:00:30",
+      "device": "entrance_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T18:04:27.690239",
+      "device": "entrance_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T18:30:00",
+      "device": "living_room_tv",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T18:30:00",
+      "device": "living_room_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T18:30:06",
+      "device": "living_room_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T18:30:30",
+      "device": "living_room_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T18:45:00",
+      "device": "living_room_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T18:45:06",
+      "device": "living_room_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "kitchen_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "kitchen_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "kitchen_fridge",
+      "status": "OPEN"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.7C"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.0C"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "406ppm"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "kitchen_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "64.8%"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:00",
+      "device": "main_power_meter",
+      "status": "2300W"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:06",
+      "device": "kitchen_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T19:00:30",
+      "device": "kitchen_fridge",
+      "status": "CLOSED"
+    },
+    {
+      "timestamp": "2025-11-17T19:05:00",
+      "device": "kitchen_stove",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T19:05:00",
+      "device": "kitchen_range_hood",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T19:07:54.402813",
+      "device": "living_room_tv",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:07:54.402813",
+      "device": "living_room_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:25:00",
+      "device": "kitchen_stove",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:25:00",
+      "device": "kitchen_range_hood",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:42:36.815107",
+      "device": "kitchen_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T19:45:00",
+      "device": "kitchen_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T19:45:06",
+      "device": "kitchen_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.3C"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.9C"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "409ppm"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "bathroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "65.2%"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "basement_hvac",
+      "status": "COOLING"
+    },
+    {
+      "timestamp": "2025-11-17T20:00:00",
+      "device": "main_power_meter",
+      "status": "2620W"
+    },
+    {
+      "timestamp": "2025-11-17T20:30:00",
+      "device": "living_room_tv",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T20:30:00",
+      "device": "living_room_light",
+      "status": "ON"
+    },
+    {
+      "timestamp": "2025-11-17T20:30:00",
+      "device": "living_room_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T20:30:06",
+      "device": "living_room_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T20:45:00",
+      "device": "living_room_motion_sensor",
+      "status": "MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T20:45:06",
+      "device": "living_room_motion_sensor",
+      "status": "NO_MOTION"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.4C"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "living_room_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "20.4C"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "400ppm"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "bedroom_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "67.1%"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "basement_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T21:00:00",
+      "device": "main_power_meter",
+      "status": "2285W"
+    },
+    {
+      "timestamp": "2025-11-17T21:42:12.076243",
+      "device": "living_room_tv",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T21:42:12.076243",
+      "device": "living_room_light",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "21.1C"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "living_room_power_meter",
+      "status": "2000W"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.6C"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "422ppm"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "bathroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "kitchen_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "63.5%"
+    },
+    {
+      "timestamp": "2025-11-17T22:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "living_room_temp_sensor",
+      "status": "20.9C"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "living_room_hvac",
+      "status": "OFF"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "bedroom_temp_sensor",
+      "status": "19.2C"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "bedroom_co2_sensor",
+      "status": "1002ppm"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "bedroom_hvac",
+      "status": "HEATING"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "basement_humidity_sensor",
+      "status": "62.5%"
+    },
+    {
+      "timestamp": "2025-11-17T23:00:00",
+      "device": "main_power_meter",
+      "status": "2120W"
+    },
+    {
+      "timestamp": "2025-11-18T00:00:00",
+      "device": "bathroom_water_flow",
+      "status": "OFF"
+    }
+  ],
+  "evidence_devices": [
+    "entrance_light",
+    "living_room_light"
+  ],
+  "pair_id": "TDCS_PAIR_2b61685aaf030ebc",
+  "paired_id": "TDCS_DELAY_002_normal_v0002_a764d3",
+  "anomaly_types": [
+    "causal_delay",
+    "causal_delay"
+  ],
+  "anomaly_details": [
+    {
+      "type": "causal_delay",
+      "cause_device": "entrance_motion_sensor",
+      "effect_device": "entrance_light",
+      "delay_minutes": 0.5,
+      "start_time": "18:00:00"
+    },
+    {
+      "type": "causal_delay",
+      "cause_device": "living_room_motion_sensor",
+      "effect_device": "living_room_light",
+      "delay_minutes": 0.5,
+      "start_time": "18:30:00"
+    }
+  ],
+  "metadata": {
+    "dataset": "tdcs_rbe",
+    "eval_id": "EVAL_01893B273DC4",
+    "template_id": "TDCS_DELAY_002",
+    "variant": 2
+  }
+}

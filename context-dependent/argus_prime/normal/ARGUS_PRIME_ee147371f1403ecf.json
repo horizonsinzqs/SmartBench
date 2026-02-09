@@ -1,0 +1,157 @@
+{
+  "id": "ARGUS_PRIME_ee147371f1403ecf",
+  "label": "normal",
+  "description": "In the evening of a summer weekday. 7 devices generated 26 events during a 1 hours monitoring window. Key activities include: door/window state changes, lighting control, temperature monitoring. A total of 19 device state transitions occurred.",
+  "reasoning": "1. [OBSERVATIONS]\n - Time period: evening, Season: summer\n - Duration: 54.9 minutes\n - Devices involved: 7\n - Total events: 26\n\n2. [ANALYSIS]\n Device activity distribution:\n - lightLevel: 11 events\n - environment: 2 events\n - thermostat: 1 events\n - door: 6 events\n - temperature: 5 events\n State transitions: 19\n\n3. [EVIDENCE EVALUATION]\n Evidence 1: All environmental readings change within realistic physical constraints.\n - Confidence: 85%\n\n4. [EXCLUSION ANALYSIS]\n - Physical consistency check: PASSED\n - Causal reasonableness check: PASSED\n - Temporal coherence check: PASSED\n\n5. [CONCLUSION]\n Confidence: 90%\n Basis: All activity patterns are consistent with typical smart home usage",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-06-10T18:24:31.045688+00:00",
+      "device": "hue.lightLevel",
+      "status": "3.09"
+    },
+    {
+      "timestamp": "2021-06-10T18:25:43.560522+00:00",
+      "device": "weather.homeLocation",
+      "status": "partlycloudy"
+    },
+    {
+      "timestamp": "2021-06-10T18:26:01.296975+00:00",
+      "device": "weather.town",
+      "status": "sunny"
+    },
+    {
+      "timestamp": "2021-06-10T18:29:31.043365+00:00",
+      "device": "hue.lightLevel",
+      "status": "2.87"
+    },
+    {
+      "timestamp": "2021-06-10T18:35:37.589123+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "23.7"
+    },
+    {
+      "timestamp": "2021-06-10T18:39:28.044200+00:00",
+      "device": "hue.lightLevel",
+      "status": "2.64"
+    },
+    {
+      "timestamp": "2021-06-10T18:41:06.840362+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-06-10T18:41:12.133342+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-06-10T18:44:28.044548+00:00",
+      "device": "hue.lightLevel",
+      "status": "2.42"
+    },
+    {
+      "timestamp": "2021-06-10T18:46:33.042852+00:00",
+      "device": "hue.temperature",
+      "status": "23.37"
+    },
+    {
+      "timestamp": "2021-06-10T18:48:16.467227+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-06-10T18:48:23.805812+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-06-10T18:49:28.045100+00:00",
+      "device": "hue.lightLevel",
+      "status": "2.2"
+    },
+    {
+      "timestamp": "2021-06-10T18:54:28.042442+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.87"
+    },
+    {
+      "timestamp": "2021-06-10T18:56:33.043679+00:00",
+      "device": "hue.temperature",
+      "status": "23.51"
+    },
+    {
+      "timestamp": "2021-06-10T18:59:28.045603+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.76"
+    },
+    {
+      "timestamp": "2021-06-10T19:01:28.044308+00:00",
+      "device": "hue.temperature",
+      "status": "23.65"
+    },
+    {
+      "timestamp": "2021-06-10T19:04:28.045587+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.65"
+    },
+    {
+      "timestamp": "2021-06-10T19:09:28.045494+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.43"
+    },
+    {
+      "timestamp": "2021-06-10T19:11:28.045113+00:00",
+      "device": "hue.temperature",
+      "status": "23.51"
+    },
+    {
+      "timestamp": "2021-06-10T19:12:07.331598+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-06-10T19:12:18.907948+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-06-10T19:12:43.024341+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-06-10T19:14:28.043698+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.32"
+    },
+    {
+      "timestamp": "2021-06-10T19:16:28.046616+00:00",
+      "device": "hue.temperature",
+      "status": "23.65"
+    },
+    {
+      "timestamp": "2021-06-10T19:19:28.044044+00:00",
+      "device": "hue.lightLevel",
+      "status": "1.43"
+    }
+  ],
+  "evidence_devices": [],
+  "pair_id": "ARGUS_PRIME_PAIR_ae3cee5d8f5ae9f4",
+  "paired_id": "ARGUS_PRIME_1ec58db9ba799796",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home3",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}

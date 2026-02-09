@@ -1,0 +1,202 @@
+{
+  "id": "ARGUS_PRIME_5fb2e297627d4a26",
+  "label": "anomaly",
+  "description": "In the afternoon of a summer weekday. the system monitored 33 events across 9 devices within 30 minutes. Key activities include: motion detection, door/window state changes, lighting control, temperature monitoring. A total of 24 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: temporal - door_left_open_duration\n Time period: afternoon, Season: summer\n\n2. [EVIDENCE]\n Evidence 1: The door (door) stays open from 14:59 until 15:22, lasting ~23 minutes.\n - Related events: 2\n - Confidence: 90%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 90%",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-07-13T14:54:23.056420+00:00",
+      "device": "hue2.lightLevel",
+      "status": "27.44"
+    },
+    {
+      "timestamp": "2021-07-13T14:57:52.785542+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T14:57:59.104752+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T14:59:32.299981+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:01:08.058095+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:01:23.059761+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:01:34.513914+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:01:35.189220+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "22.5"
+    },
+    {
+      "timestamp": "2021-07-13T15:02:03.043396+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:02:18.058979+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:02:48.043519+00:00",
+      "device": "hue2.temperature",
+      "status": "20.25"
+    },
+    {
+      "timestamp": "2021-07-13T15:02:53.058916+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:03:03.030576+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:12:51.067564+00:00",
+      "device": "light.livingRoom",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:12:51.082900+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:12:51.083120+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:14:17.057008+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.82"
+    },
+    {
+      "timestamp": "2021-07-13T15:14:44.057875+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:15:14.059953+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:15:19.057009+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:15:29.028044+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:16:04.028939+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:16:14.055982+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:16:34.028511+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:16:44.040231+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:18:09.027346+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:18:09.027653+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:18:09.055322+00:00",
+      "device": "light.livingRoom",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:19:19.059815+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.71"
+    },
+    {
+      "timestamp": "2021-07-13T15:22:49.055534+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-13T15:22:54.057644+00:00",
+      "device": "hue2.lightLevel",
+      "status": "6.06"
+    },
+    {
+      "timestamp": "2021-07-13T15:22:55.057644+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-13T15:22:59.028532+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    }
+  ],
+  "evidence_devices": [
+    "door"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_95e31a0d3ac312d5",
+  "paired_id": "ARGUS_PRIME_21c5ba20470615a5",
+  "anomaly_types": [
+    "temporal"
+  ],
+  "anomaly_details": [
+    {
+      "type": "temporal",
+      "subtype": "door_left_open_duration"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home3",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}

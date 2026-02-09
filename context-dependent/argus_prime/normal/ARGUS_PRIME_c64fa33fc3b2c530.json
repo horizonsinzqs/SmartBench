@@ -1,0 +1,328 @@
+{
+  "id": "ARGUS_PRIME_c64fa33fc3b2c530",
+  "label": "normal",
+  "description": "On a spring weekday during the night. the smart home system recorded 60 sensor events from 6 devices over 3 hours. Key activities include: motion detection, temperature monitoring. A total of 52 device state transitions occurred.",
+  "reasoning": "1. [OBSERVATIONS]\n - Time period: night, Season: spring\n - Duration: 179.3 minutes\n - Devices involved: 6\n - Total events: 60\n\n2. [ANALYSIS]\n Device activity distribution:\n - temperature: 1 events\n - sleep: 18 events\n - presence: 3 events\n - motion: 35 events\n State transitions: 52\n\n3. [EVIDENCE EVALUATION]\n Evidence 1: Frequent motion detections are recorded during a late-night period (can look suspicious in a snapshot).\n - Confidence: 80%\n Evidence 2: SleepConfidence is only 6%, suggesting the user is awake (normal late-night activity).\n - Confidence: 85%\n\n4. [EXCLUSION ANALYSIS]\n - Physical consistency check: PASSED\n - Causal reasonableness check: PASSED\n - Temporal coherence check: PASSED\n\n5. [CONCLUSION]\n Confidence: 90%\n Basis: All activity patterns are consistent with typical smart home usage",
+  "context": {
+    "occupancy_type": "one_room_apartment",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-04-12T01:20:13.680590+00:00",
+      "device": "temperature",
+      "status": "18.20"
+    },
+    {
+      "timestamp": "2021-04-12T01:57:19.550742+00:00",
+      "device": "phone.batteryLife",
+      "status": "39"
+    },
+    {
+      "timestamp": "2021-04-12T02:06:19.669061+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "73"
+    },
+    {
+      "timestamp": "2021-04-12T02:15:19.910578+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "84"
+    },
+    {
+      "timestamp": "2021-04-12T02:15:19.913836+00:00",
+      "device": "phone.lightSensor",
+      "status": "2"
+    },
+    {
+      "timestamp": "2021-04-12T02:16:09.105023+00:00",
+      "device": "phone.lightSensor",
+      "status": "3"
+    },
+    {
+      "timestamp": "2021-04-12T02:16:41.332625+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-04-12T02:17:00.822281+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-04-12T02:21:18.922250+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "6"
+    },
+    {
+      "timestamp": "2021-04-12T02:27:18.509265+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "42"
+    },
+    {
+      "timestamp": "2021-04-12T02:33:17.642177+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "62"
+    },
+    {
+      "timestamp": "2021-04-12T02:39:17.085193+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "84"
+    },
+    {
+      "timestamp": "2021-04-12T02:45:16.907743+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "86"
+    },
+    {
+      "timestamp": "2021-04-12T02:56:24.116881+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "92"
+    },
+    {
+      "timestamp": "2021-04-12T03:01:28.975933+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "43"
+    },
+    {
+      "timestamp": "2021-04-12T03:07:29.291441+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "82"
+    },
+    {
+      "timestamp": "2021-04-12T03:13:28.403425+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "91"
+    },
+    {
+      "timestamp": "2021-04-12T03:19:27.919655+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "12"
+    },
+    {
+      "timestamp": "2021-04-12T03:20:56.042509+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:21:16.080457+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:25:26.599636+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "67"
+    },
+    {
+      "timestamp": "2021-04-12T03:31:25.414516+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "23"
+    },
+    {
+      "timestamp": "2021-04-12T03:32:01.039864+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:32:21.042291+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:34:46.031262+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:35:11.030294+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:35:16.044953+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:37:24.353916+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "3"
+    },
+    {
+      "timestamp": "2021-04-12T03:37:26.029847+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:38:16.043298+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:38:36.028702+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:38:46.055690+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:39:31.045571+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:39:36.031896+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:39:46.044209+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:39:51.032347+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:40:01.038637+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:40:11.044133+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:40:41.033047+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:40:51.045749+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:41:01.049092+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:41:11.032131+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:41:31.053470+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:41:36.029270+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:41:46.045445+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:42:01.040719+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:42:46.030263+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:43:21.032706+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:43:23.237047+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "53"
+    },
+    {
+      "timestamp": "2021-04-12T03:43:46.043778+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:43:51.033676+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:44:06.074121+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:44:11.032342+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:44:21.046294+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:44:46.029297+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:45:11.044476+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-04-12T03:45:36.044652+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-04-12T03:49:22.767253+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "66"
+    },
+    {
+      "timestamp": "2021-04-12T03:55:21.796565+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "97"
+    },
+    {
+      "timestamp": "2021-04-12T04:19:29.685167+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    }
+  ],
+  "evidence_devices": [],
+  "pair_id": "ARGUS_PRIME_PAIR_2c7b67a6251d4d21",
+  "paired_id": "ARGUS_PRIME_641f2cce2e735cbf",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home2",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}

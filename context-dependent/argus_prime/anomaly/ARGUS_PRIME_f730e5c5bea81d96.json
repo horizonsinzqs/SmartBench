@@ -1,0 +1,185 @@
+{
+  "id": "ARGUS_PRIME_f730e5c5bea81d96",
+  "label": "anomaly",
+  "description": "In the evening of a summer weekday. the smart home system recorded 30 sensor events from 7 devices over 3 hours. Key activities include: door/window state changes, lighting control, temperature monitoring. A total of 23 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: temporal - door_left_open_duration\n Time period: evening, Season: summer\n\n2. [EVIDENCE]\n Evidence 1: The door (door) stays open from 21:14 until 21:34, lasting ~20 minutes.\n - Related events: 2\n - Confidence: 90%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 90%",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-07-16T21:00:22.041600+00:00",
+      "device": "hue2.temperature",
+      "status": "20.82"
+    },
+    {
+      "timestamp": "2021-07-16T21:05:22.024410+00:00",
+      "device": "hue2.temperature",
+      "status": "20.96"
+    },
+    {
+      "timestamp": "2021-07-16T21:10:22.043947+00:00",
+      "device": "hue2.temperature",
+      "status": "21.1"
+    },
+    {
+      "timestamp": "2021-07-16T21:14:37.467958+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-16T21:15:22.041780+00:00",
+      "device": "hue2.temperature",
+      "status": "20.96"
+    },
+    {
+      "timestamp": "2021-07-16T21:17:32.057595+00:00",
+      "device": "hue2.lightLevel",
+      "status": "2.2"
+    },
+    {
+      "timestamp": "2021-07-16T21:20:22.042346+00:00",
+      "device": "hue2.temperature",
+      "status": "20.82"
+    },
+    {
+      "timestamp": "2021-07-16T21:25:17.031311+00:00",
+      "device": "hue2.temperature",
+      "status": "20.96"
+    },
+    {
+      "timestamp": "2021-07-16T21:27:32.029861+00:00",
+      "device": "hue2.lightLevel",
+      "status": "2.09"
+    },
+    {
+      "timestamp": "2021-07-16T21:30:17.043528+00:00",
+      "device": "hue2.temperature",
+      "status": "21.1"
+    },
+    {
+      "timestamp": "2021-07-16T21:34:15.026513+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-16T21:34:15.026709+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-16T21:34:15.056307+00:00",
+      "device": "light.livingRoom",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-16T21:34:16.056307+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-16T21:47:29.028686+00:00",
+      "device": "hue2.lightLevel",
+      "status": "2.31"
+    },
+    {
+      "timestamp": "2021-07-16T21:50:19.054397+00:00",
+      "device": "hue2.temperature",
+      "status": "21.24"
+    },
+    {
+      "timestamp": "2021-07-16T21:52:29.062040+00:00",
+      "device": "hue2.lightLevel",
+      "status": "2.2"
+    },
+    {
+      "timestamp": "2021-07-16T21:55:19.028556+00:00",
+      "device": "hue2.temperature",
+      "status": "21.38"
+    },
+    {
+      "timestamp": "2021-07-16T22:30:16.044136+00:00",
+      "device": "hue2.temperature",
+      "status": "21.24"
+    },
+    {
+      "timestamp": "2021-07-16T22:37:26.057080+00:00",
+      "device": "hue2.lightLevel",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-07-16T22:40:11.057254+00:00",
+      "device": "hue2.temperature",
+      "status": "21.38"
+    },
+    {
+      "timestamp": "2021-07-16T22:45:11.060061+00:00",
+      "device": "hue2.temperature",
+      "status": "21.52"
+    },
+    {
+      "timestamp": "2021-07-16T22:58:36.493596+00:00",
+      "device": "weather.homeLocation",
+      "status": "cloudy"
+    },
+    {
+      "timestamp": "2021-07-16T23:05:11.057970+00:00",
+      "device": "hue2.temperature",
+      "status": "21.38"
+    },
+    {
+      "timestamp": "2021-07-16T23:10:11.058836+00:00",
+      "device": "hue2.temperature",
+      "status": "21.52"
+    },
+    {
+      "timestamp": "2021-07-16T23:25:06.029429+00:00",
+      "device": "hue2.temperature",
+      "status": "21.67"
+    },
+    {
+      "timestamp": "2021-07-16T23:30:09.041164+00:00",
+      "device": "hue2.temperature",
+      "status": "21.52"
+    },
+    {
+      "timestamp": "2021-07-16T23:35:07.068970+00:00",
+      "device": "hue2.temperature",
+      "status": "21.38"
+    },
+    {
+      "timestamp": "2021-07-16T23:40:05.059221+00:00",
+      "device": "hue2.temperature",
+      "status": "21.52"
+    },
+    {
+      "timestamp": "2021-07-16T23:50:05.025625+00:00",
+      "device": "hue2.temperature",
+      "status": "21.38"
+    }
+  ],
+  "evidence_devices": [
+    "door"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_5f8a0db8672b0679",
+  "paired_id": "ARGUS_PRIME_94185fa996518b66",
+  "anomaly_types": [
+    "temporal"
+  ],
+  "anomaly_details": [
+    {
+      "type": "temporal",
+      "subtype": "door_left_open_duration"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home3",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "state_transition"
+    ]
+  }
+}

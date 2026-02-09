@@ -1,0 +1,335 @@
+{
+  "id": "ARGUS_PRIME_97c263daf160f71d",
+  "label": "anomaly",
+  "description": "In the late evening of a autumn weekend. 6 devices generated 60 events during a 1 hours monitoring window. Key activities include: lighting control. A total of 50 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: temporal - light_toggle_storm\n Time period: late_evening, Season: autumn\n\n2. [EVIDENCE]\n Evidence 1: Within a short period, the same light toggles repeatedly (about 4 toggles).\n - Related events: 5\n - Confidence: 88%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 88%",
+  "context": {
+    "occupancy_type": "single_room_shared_flat",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-10-24T21:47:39.556090+00:00",
+      "device": "co2.value",
+      "status": "1598"
+    },
+    {
+      "timestamp": "2021-10-24T21:47:49.605244+00:00",
+      "device": "co2.value",
+      "status": "1588"
+    },
+    {
+      "timestamp": "2021-10-24T21:48:09.707960+00:00",
+      "device": "co2.value",
+      "status": "1590"
+    },
+    {
+      "timestamp": "2021-10-24T21:48:19.755178+00:00",
+      "device": "co2.value",
+      "status": "1593"
+    },
+    {
+      "timestamp": "2021-10-24T21:48:29.806234+00:00",
+      "device": "co2.value",
+      "status": "1588"
+    },
+    {
+      "timestamp": "2021-10-24T21:48:49.924547+00:00",
+      "device": "co2.value",
+      "status": "1592"
+    },
+    {
+      "timestamp": "2021-10-24T21:48:59.976594+00:00",
+      "device": "co2.value",
+      "status": "1591"
+    },
+    {
+      "timestamp": "2021-10-24T21:49:10.027943+00:00",
+      "device": "co2.value",
+      "status": "1593"
+    },
+    {
+      "timestamp": "2021-10-24T21:49:20.079543+00:00",
+      "device": "co2.value",
+      "status": "1589"
+    },
+    {
+      "timestamp": "2021-10-24T21:49:40.187716+00:00",
+      "device": "co2.value",
+      "status": "1585"
+    },
+    {
+      "timestamp": "2021-10-24T21:50:00.291070+00:00",
+      "device": "co2.value",
+      "status": "1583"
+    },
+    {
+      "timestamp": "2021-10-24T21:50:10.342587+00:00",
+      "device": "co2.value",
+      "status": "1575"
+    },
+    {
+      "timestamp": "2021-10-24T21:50:20.385173+00:00",
+      "device": "co2.value",
+      "status": "1567"
+    },
+    {
+      "timestamp": "2021-10-24T21:50:40.488123+00:00",
+      "device": "co2.value",
+      "status": "1572"
+    },
+    {
+      "timestamp": "2021-10-24T21:50:50.534834+00:00",
+      "device": "co2.value",
+      "status": "1579"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:00.585282+00:00",
+      "device": "co2.value",
+      "status": "1585"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:10.646481+00:00",
+      "device": "co2.value",
+      "status": "1588"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:20.698302+00:00",
+      "device": "co2.value",
+      "status": "1589"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:22.930924+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:30.749293+00:00",
+      "device": "co2.value",
+      "status": "1588"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:40.800701+00:00",
+      "device": "co2.value",
+      "status": "1595"
+    },
+    {
+      "timestamp": "2021-10-24T21:51:50.845425+00:00",
+      "device": "co2.value",
+      "status": "1596"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:00.896662+00:00",
+      "device": "co2.value",
+      "status": "1586"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:10.948011+00:00",
+      "device": "co2.value",
+      "status": "1573"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:21.002570+00:00",
+      "device": "co2.value",
+      "status": "1569"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:31.050715+00:00",
+      "device": "co2.value",
+      "status": "1561"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:41.095065+00:00",
+      "device": "co2.value",
+      "status": "1553"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:47.265365+00:00",
+      "device": "phone.charging",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:50.083501+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-24T21:52:50.103465+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:00.083501+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:01.197941+00:00",
+      "device": "co2.value",
+      "status": "1553"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:10.083501+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:11.249045+00:00",
+      "device": "co2.value",
+      "status": "1564"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:20.083501+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:30.083501+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-10-24T21:53:41.396135+00:00",
+      "device": "co2.value",
+      "status": "1575"
+    },
+    {
+      "timestamp": "2021-10-24T21:54:01.496777+00:00",
+      "device": "co2.value",
+      "status": "1569"
+    },
+    {
+      "timestamp": "2021-10-24T21:54:41.702582+00:00",
+      "device": "co2.value",
+      "status": "1575"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:01.805572+00:00",
+      "device": "co2.value",
+      "status": "1584"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:10.899658+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "16"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:21.908518+00:00",
+      "device": "co2.value",
+      "status": "1579"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:31.959905+00:00",
+      "device": "co2.value",
+      "status": "1587"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:42.004717+00:00",
+      "device": "co2.value",
+      "status": "1591"
+    },
+    {
+      "timestamp": "2021-10-24T21:55:52.056110+00:00",
+      "device": "co2.value",
+      "status": "1601"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:02.107519+00:00",
+      "device": "co2.value",
+      "status": "1612"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:12.158979+00:00",
+      "device": "co2.value",
+      "status": "1623"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:22.206811+00:00",
+      "device": "co2.value",
+      "status": "1624"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:32.254882+00:00",
+      "device": "co2.value",
+      "status": "1621"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:42.306482+00:00",
+      "device": "co2.value",
+      "status": "1617"
+    },
+    {
+      "timestamp": "2021-10-24T21:56:52.357743+00:00",
+      "device": "co2.value",
+      "status": "1612"
+    },
+    {
+      "timestamp": "2021-10-24T21:57:22.505005+00:00",
+      "device": "co2.value",
+      "status": "1620"
+    },
+    {
+      "timestamp": "2021-10-24T21:57:52.659646+00:00",
+      "device": "co2.value",
+      "status": "1624"
+    },
+    {
+      "timestamp": "2021-10-24T22:03:20.038269+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "63"
+    },
+    {
+      "timestamp": "2021-10-24T22:08:19.568206+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-24T22:09:19.118297+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "87"
+    },
+    {
+      "timestamp": "2021-10-24T22:15:18.022670+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-10-24T22:23:53.353534+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-24T22:39:09.194739+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-10-24T22:47:27.588112+00:00",
+      "device": "co2.value",
+      "status": "1693"
+    }
+  ],
+  "evidence_devices": [
+    "deskLamp"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_985c6830354bc6d1",
+  "paired_id": "ARGUS_PRIME_0d07dd1d1c04ad4e",
+  "anomaly_types": [
+    "temporal"
+  ],
+  "anomaly_details": [
+    {
+      "type": "temporal",
+      "subtype": "light_toggle_storm"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home1",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "state_transition"
+    ]
+  }
+}

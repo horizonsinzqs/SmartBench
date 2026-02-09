@@ -1,0 +1,337 @@
+{
+  "id": "ARGUS_PRIME_4b8985884df69d9d",
+  "label": "anomaly",
+  "description": "On a summer weekday during the morning. 7 devices generated 60 events during a 1 hours and 30 minutes monitoring window. Key activities include: temperature monitoring. A total of 49 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: user_state - activity_sleep_conflict\n Time period: morning, Season: summer\n\n2. [EVIDENCE]\n Evidence 1: At 12:00, sleepConfidence indicates high sleep (sleepConfidence=95%), but activity state reports an active state ('walking') near the same time.\n - Related events: 2\n - Confidence: 90%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 90%",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1
+  },
+  "events": [
+    {
+      "timestamp": "2021-06-03T10:43:13.058325+00:00",
+      "device": "humidity",
+      "status": "54.00"
+    },
+    {
+      "timestamp": "2021-06-03T10:44:16.209007+00:00",
+      "device": "humidity",
+      "status": "53.90"
+    },
+    {
+      "timestamp": "2021-06-03T10:45:00.964149+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "46"
+    },
+    {
+      "timestamp": "2021-06-03T10:45:39.023614+00:00",
+      "device": "hue.temperature",
+      "status": "20.6"
+    },
+    {
+      "timestamp": "2021-06-03T10:46:19.038825+00:00",
+      "device": "hue.lightLevel",
+      "status": "222.38"
+    },
+    {
+      "timestamp": "2021-06-03T10:47:26.633594+00:00",
+      "device": "humidity",
+      "status": "53.80"
+    },
+    {
+      "timestamp": "2021-06-03T10:50:36.762890+00:00",
+      "device": "humidity",
+      "status": "53.70"
+    },
+    {
+      "timestamp": "2021-06-03T10:51:19.037834+00:00",
+      "device": "hue.lightLevel",
+      "status": "235.61"
+    },
+    {
+      "timestamp": "2021-06-03T10:51:40.074971+00:00",
+      "device": "humidity",
+      "status": "53.80"
+    },
+    {
+      "timestamp": "2021-06-03T10:54:49.313218+00:00",
+      "device": "humidity",
+      "status": "53.60"
+    },
+    {
+      "timestamp": "2021-06-03T10:55:09.243944+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "66"
+    },
+    {
+      "timestamp": "2021-06-03T10:55:53.179623+00:00",
+      "device": "humidity",
+      "status": "53.50"
+    },
+    {
+      "timestamp": "2021-06-03T10:56:19.039450+00:00",
+      "device": "hue.lightLevel",
+      "status": "230.25"
+    },
+    {
+      "timestamp": "2021-06-03T10:56:56.490037+00:00",
+      "device": "humidity",
+      "status": "53.70"
+    },
+    {
+      "timestamp": "2021-06-03T10:57:59.650397+00:00",
+      "device": "humidity",
+      "status": "53.60"
+    },
+    {
+      "timestamp": "2021-06-03T10:58:12.323915+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-06-03T10:59:02.634901+00:00",
+      "device": "humidity",
+      "status": "53.50"
+    },
+    {
+      "timestamp": "2021-06-03T11:00:05.788870+00:00",
+      "device": "humidity",
+      "status": "53.60"
+    },
+    {
+      "timestamp": "2021-06-03T11:00:08.893687+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-06-03T11:01:09.813992+00:00",
+      "device": "humidity",
+      "status": "53.50"
+    },
+    {
+      "timestamp": "2021-06-03T11:01:19.038899+00:00",
+      "device": "hue.lightLevel",
+      "status": "232.01"
+    },
+    {
+      "timestamp": "2021-06-03T11:01:24.038821+00:00",
+      "device": "hue.lightLevel",
+      "status": "133.91"
+    },
+    {
+      "timestamp": "2021-06-03T11:04:19.247679+00:00",
+      "device": "humidity",
+      "status": "53.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:06:19.023824+00:00",
+      "device": "hue.lightLevel",
+      "status": "248.66"
+    },
+    {
+      "timestamp": "2021-06-03T11:07:29.766574+00:00",
+      "device": "humidity",
+      "status": "53.50"
+    },
+    {
+      "timestamp": "2021-06-03T11:08:32.929164+00:00",
+      "device": "humidity",
+      "status": "53.40"
+    },
+    {
+      "timestamp": "2021-06-03T11:09:13.848172+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "97"
+    },
+    {
+      "timestamp": "2021-06-03T11:10:34.034550+00:00",
+      "device": "hue.temperature",
+      "status": "20.74"
+    },
+    {
+      "timestamp": "2021-06-03T11:12:46.379867+00:00",
+      "device": "humidity",
+      "status": "53.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:14:52.508033+00:00",
+      "device": "humidity",
+      "status": "53.40"
+    },
+    {
+      "timestamp": "2021-06-03T11:15:34.038622+00:00",
+      "device": "hue.temperature",
+      "status": "20.88"
+    },
+    {
+      "timestamp": "2021-06-03T11:15:55.642292+00:00",
+      "device": "humidity",
+      "status": "53.20"
+    },
+    {
+      "timestamp": "2021-06-03T11:16:19.023655+00:00",
+      "device": "hue.lightLevel",
+      "status": "251.07"
+    },
+    {
+      "timestamp": "2021-06-03T11:16:59.569570+00:00",
+      "device": "humidity",
+      "status": "53.40"
+    },
+    {
+      "timestamp": "2021-06-03T11:18:02.891522+00:00",
+      "device": "humidity",
+      "status": "53.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:19:07.133319+00:00",
+      "device": "humidity",
+      "status": "53.40"
+    },
+    {
+      "timestamp": "2021-06-03T11:21:00.919982+00:00",
+      "device": "temperature",
+      "status": "23.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:21:19.040996+00:00",
+      "device": "hue.lightLevel",
+      "status": "256.04"
+    },
+    {
+      "timestamp": "2021-06-03T11:24:11.429736+00:00",
+      "device": "humidity",
+      "status": "53.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:25:14.398034+00:00",
+      "device": "humidity",
+      "status": "53.20"
+    },
+    {
+      "timestamp": "2021-06-03T11:26:17.534473+00:00",
+      "device": "humidity",
+      "status": "53.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:26:19.039866+00:00",
+      "device": "hue.lightLevel",
+      "status": "263.75"
+    },
+    {
+      "timestamp": "2021-06-03T11:26:24.038770+00:00",
+      "device": "hue.lightLevel",
+      "status": "129.27"
+    },
+    {
+      "timestamp": "2021-06-03T11:27:21.544352+00:00",
+      "device": "humidity",
+      "status": "53.10"
+    },
+    {
+      "timestamp": "2021-06-03T11:28:24.892325+00:00",
+      "device": "temperature",
+      "status": "23.20"
+    },
+    {
+      "timestamp": "2021-06-03T11:30:31.045950+00:00",
+      "device": "humidity",
+      "status": "53.20"
+    },
+    {
+      "timestamp": "2021-06-03T11:31:14.023611+00:00",
+      "device": "hue.lightLevel",
+      "status": "250.15"
+    },
+    {
+      "timestamp": "2021-06-03T11:34:44.609585+00:00",
+      "device": "humidity",
+      "status": "53.10"
+    },
+    {
+      "timestamp": "2021-06-03T11:35:34.025595+00:00",
+      "device": "hue.temperature",
+      "status": "20.74"
+    },
+    {
+      "timestamp": "2021-06-03T11:35:47.610132+00:00",
+      "device": "temperature",
+      "status": "23.30"
+    },
+    {
+      "timestamp": "2021-06-03T11:35:47.616092+00:00",
+      "device": "humidity",
+      "status": "53.20"
+    },
+    {
+      "timestamp": "2021-06-03T11:53:30.065315+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "96"
+    },
+    {
+      "timestamp": "2021-06-03T12:00:16.485315+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-06-03T12:00:32.570709+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-06-03T12:06:31.670812+00:00",
+      "device": "phone.activity",
+      "status": "unknown"
+    },
+    {
+      "timestamp": "2021-06-03T12:06:31.672035+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "21"
+    },
+    {
+      "timestamp": "2021-06-03T12:06:31.981221+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-06-03T12:11:33.201437+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "1"
+    },
+    {
+      "timestamp": "2021-06-03T12:11:34.485650+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-06-03T12:11:35.401184+00:00",
+      "device": "phone.activity",
+      "status": "walking"
+    }
+  ],
+  "evidence_devices": [
+    "phone.activity",
+    "phone.sleepConfidence"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_e46617929d03cb7e",
+  "paired_id": "ARGUS_PRIME_5cd0d06e88a07bc3",
+  "anomaly_types": [
+    "user_state"
+  ],
+  "anomaly_details": [
+    {
+      "type": "user_state",
+      "subtype": "activity_sleep_conflict"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home4",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}
