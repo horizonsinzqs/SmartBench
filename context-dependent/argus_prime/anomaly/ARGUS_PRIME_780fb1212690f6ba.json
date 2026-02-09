@@ -1,0 +1,160 @@
+{
+  "id": "ARGUS_PRIME_780fb1212690f6ba",
+  "label": "anomaly",
+  "description": "During night on a summer weekend. the smart home system recorded 24 sensor events from 7 devices over 45 minutes. Key activities include: motion detection, door/window state changes, lighting control, temperature monitoring. A total of 17 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: temporal - light_toggle_storm\n Time period: night, Season: summer\n\n2. [EVIDENCE]\n Evidence 1: Within a short period, the same light toggles repeatedly (about 4 toggles).\n - Related events: 5\n - Confidence: 88%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 88%",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1,
+    "season": "summer",
+    "weather": null,
+    "day_type": "weekend",
+    "time_of_day": "night"
+  },
+  "events": [
+    {
+      "timestamp": "2021-07-10T01:43:44.042590+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:44:09.039984+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T01:44:19.028363+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:44:49.041367+00:00",
+      "device": "hue2.lightLevel",
+      "status": "26.12"
+    },
+    {
+      "timestamp": "2021-07-10T01:45:44.031256+00:00",
+      "device": "hue2.temperature",
+      "status": "21.1"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:04.024533+00:00",
+      "device": "light.livingRoom",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:04.055336+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:14.055336+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:24.055336+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:34.055336+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:44.055336+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:49:49.029646+00:00",
+      "device": "hue2.lightLevel",
+      "status": "22.37"
+    },
+    {
+      "timestamp": "2021-07-10T01:57:34.046859+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T01:57:34.047247+00:00",
+      "device": "hue2.lightLevel",
+      "status": "10.14"
+    },
+    {
+      "timestamp": "2021-07-10T01:57:54.028654+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T01:59:49.041644+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T01:59:59.054603+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T02:00:44.040735+00:00",
+      "device": "hue2.temperature",
+      "status": "21.24"
+    },
+    {
+      "timestamp": "2021-07-10T02:02:39.044473+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.71"
+    },
+    {
+      "timestamp": "2021-07-10T02:05:51.538784+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-10T02:06:02.964913+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-10T02:10:39.057175+00:00",
+      "device": "hue2.temperature",
+      "status": "21.1"
+    },
+    {
+      "timestamp": "2021-07-10T02:16:29.475322+00:00",
+      "device": "weather.homeLocation",
+      "status": "rainy"
+    },
+    {
+      "timestamp": "2021-07-10T02:25:42.026836+00:00",
+      "device": "hue2.temperature",
+      "status": "20.96"
+    }
+  ],
+  "evidence_devices": [
+    "deskLamp"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_eab11153bcaa767f",
+  "paired_id": "ARGUS_PRIME_59bc0548dd21103f",
+  "anomaly_types": [
+    "temporal"
+  ],
+  "anomaly_details": [
+    {
+      "type": "temporal",
+      "subtype": "light_toggle_storm"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home3",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "state_transition"
+    ]
+  }
+}

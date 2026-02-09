@@ -1,0 +1,334 @@
+{
+  "id": "ARGUS_PRIME_1d7801747bd1b0d6",
+  "label": "normal",
+  "description": "On a autumn weekday during the evening. 22 devices generated 60 events during a 2 hours monitoring window. Key activities include: motion detection, door/window state changes, lighting control. A total of 22 device state transitions occurred.",
+  "reasoning": "1. [OBSERVATIONS]\n - Time period: evening, Season: autumn\n - Duration: 14.3 minutes\n - Devices involved: 22\n - Total events: 60\n\n2. [ANALYSIS]\n Device activity distribution:\n - presence: 8 events\n - camera: 3 events\n - automation: 8 events\n - activity: 2 events\n - sleep: 3 events\n State transitions: 22\n\n3. [EVIDENCE EVALUATION]\n Evidence 1: CO2 readings show a noticeable rising trend (can look suspicious in isolation).\n - Confidence: 72%\n Evidence 2: CO2 increases are common during meal-time/home activity and should be judged with temporal trends.\n - Confidence: 82%\n\n4. [EXCLUSION ANALYSIS]\n - Physical consistency check: PASSED\n - Causal reasonableness check: PASSED\n - Temporal coherence check: PASSED\n\n5. [CONCLUSION]\n Confidence: 90%\n Basis: All activity patterns are consistent with typical smart home usage",
+  "context": {
+    "occupancy_type": "single_room_shared_flat",
+    "duration_days": 1,
+    "season": "autumn",
+    "weather": null,
+    "day_type": "weekday",
+    "time_of_day": "evening"
+  },
+  "events": [
+    {
+      "timestamp": "2021-11-25T21:58:20.695328+00:00",
+      "device": "person.home",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.563894+00:00",
+      "device": "camera.status",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.634478+00:00",
+      "device": "automation.cameraOnWhenUserLeave",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.634653+00:00",
+      "device": "automation.cameraOffWhenAtHome",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.634797+00:00",
+      "device": "automation.lightsOnWhenMotionDetected",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.869397+00:00",
+      "device": "phone.activity",
+      "status": "still"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.870526+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "5"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.870616+00:00",
+      "device": "phone.wifiConnection",
+      "status": "connected"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.871189+00:00",
+      "device": "phone.charging",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:22.941403+00:00",
+      "device": "phone.atHome",
+      "status": "not_home"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:23.070994+00:00",
+      "device": "rolo.position",
+      "status": "open"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:23.078258+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:23.078577+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:23.267677+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:23.268659+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T21:58:25.480757+00:00",
+      "device": "automation.lightsOffWhenTooBright",
+      "status": "unavailable"
+    },
+    {
+      "timestamp": "2021-11-25T22:00:19.578134+00:00",
+      "device": "phone.wifiConnection",
+      "status": "connected"
+    },
+    {
+      "timestamp": "2021-11-25T22:00:24.130847+00:00",
+      "device": "co2.value",
+      "status": "1133"
+    },
+    {
+      "timestamp": "2021-11-25T22:00:24.242788+00:00",
+      "device": "co2.status",
+      "status": "Warned"
+    },
+    {
+      "timestamp": "2021-11-25T22:00:34.291386+00:00",
+      "device": "co2.value",
+      "status": "1136"
+    },
+    {
+      "timestamp": "2021-11-25T22:02:55.518960+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:02:55.519687+00:00",
+      "device": "person.home",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:02:55.528942+00:00",
+      "device": "camera.status",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:03:35.125768+00:00",
+      "device": "rolo.position",
+      "status": "closed"
+    },
+    {
+      "timestamp": "2021-11-25T22:04:26.186398+00:00",
+      "device": "door",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:05:51.901856+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:05:51.930449+00:00",
+      "device": "deskLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:06:12.747528+00:00",
+      "device": "phone.wifiConnection",
+      "status": "disconnected"
+    },
+    {
+      "timestamp": "2021-11-25T22:06:13.485211+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:06:30.419622+00:00",
+      "device": "phone.wifiConnection",
+      "status": "connected"
+    },
+    {
+      "timestamp": "2021-11-25T22:07:32.063380+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:09:25.968852+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "9"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:40.604287+00:00",
+      "device": "person.home",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.086998+00:00",
+      "device": "camera.status",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.141705+00:00",
+      "device": "automation.cameraOnWhenUserLeave",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.141880+00:00",
+      "device": "automation.cameraOffWhenAtHome",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.142026+00:00",
+      "device": "automation.lightsOnWhenMotionDetected",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.224002+00:00",
+      "device": "phone.activity",
+      "status": "still"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.225183+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "9"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.225280+00:00",
+      "device": "phone.wifiConnection",
+      "status": "connected"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.225923+00:00",
+      "device": "phone.charging",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.229405+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.417585+00:00",
+      "device": "ipCamera.LightLevel",
+      "status": "3.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.417712+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.419214+00:00",
+      "device": "ipCamera.sound",
+      "status": "129.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.419561+00:00",
+      "device": "ipCamera.motionActive",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.508002+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.508818+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:42.524956+00:00",
+      "device": "automation.lightsOffWhenTooBright",
+      "status": "unavailable"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:52.762521+00:00",
+      "device": "ipCamera.LightLevel",
+      "status": "0.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:10:52.762789+00:00",
+      "device": "ipCamera.sound",
+      "status": "126.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:03.819500+00:00",
+      "device": "ipCamera.motion",
+      "status": "24.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:03.819693+00:00",
+      "device": "ipCamera.sound",
+      "status": "136.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:14.021054+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:14.021134+00:00",
+      "device": "ipCamera.sound",
+      "status": "131.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:24.347631+00:00",
+      "device": "ipCamera.motion",
+      "status": "7.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:24.347713+00:00",
+      "device": "ipCamera.sound",
+      "status": "137.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:34.278033+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-11-25T22:11:34.611906+00:00",
+      "device": "ipCamera.motion",
+      "status": "11.0"
+    },
+    {
+      "timestamp": "2021-11-25T22:12:36.173154+00:00",
+      "device": "ipCamera.sound",
+      "status": "124.0"
+    }
+  ],
+  "evidence_devices": [
+    "co2.status",
+    "co2.value"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_ef0286b0e536ca28",
+  "paired_id": "ARGUS_PRIME_14ed87ca1186ff46",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home1",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "state_transition"
+    ]
+  }
+}

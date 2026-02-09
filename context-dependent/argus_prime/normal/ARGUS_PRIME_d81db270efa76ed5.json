@@ -1,0 +1,318 @@
+{
+  "id": "ARGUS_PRIME_d81db270efa76ed5",
+  "label": "normal",
+  "description": "In the early morning of a summer weekday. the smart home system recorded 56 sensor events from 15 devices over 3 hours. Key activities include: motion detection, door/window state changes, lighting control, temperature monitoring. A total of 33 device state transitions occurred.",
+  "reasoning": "1. [OBSERVATIONS]\n - Time period: early_morning, Season: summer\n - Duration: 166.3 minutes\n - Devices involved: 15\n - Total events: 56\n\n2. [ANALYSIS]\n Device activity distribution:\n - thermostat: 4 events\n - temperature: 13 events\n - motion: 3 events\n - lightLevel: 20 events\n - light: 7 events\n State transitions: 33\n\n3. [EVIDENCE EVALUATION]\n Evidence 1: Multiple light state toggles occur within a short time span (about 0 toggles).\n - Confidence: 75%\n Evidence 2: An automation trigger occurs close to the light changes, consistent with a normal coordinated scene.\n - Confidence: 84%\n\n4. [EXCLUSION ANALYSIS]\n - Physical consistency check: PASSED\n - Causal reasonableness check: PASSED\n - Temporal coherence check: PASSED\n\n5. [CONCLUSION]\n Confidence: 88%\n Basis: All activity patterns are consistent with typical smart home usage",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1,
+    "season": "summer",
+    "weather": null,
+    "day_type": "weekday",
+    "time_of_day": "early_morning"
+  },
+  "events": [
+    {
+      "timestamp": "2021-07-14T07:00:10.610949+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "23.1"
+    },
+    {
+      "timestamp": "2021-07-14T07:31:12.041167+00:00",
+      "device": "hue2.temperature",
+      "status": "20.68"
+    },
+    {
+      "timestamp": "2021-07-14T07:36:07.044381+00:00",
+      "device": "hue2.temperature",
+      "status": "20.82"
+    },
+    {
+      "timestamp": "2021-07-14T07:46:10.058239+00:00",
+      "device": "hue2.temperature",
+      "status": "20.68"
+    },
+    {
+      "timestamp": "2021-07-14T07:51:07.040922+00:00",
+      "device": "hue2.temperature",
+      "status": "20.82"
+    },
+    {
+      "timestamp": "2021-07-14T07:56:07.029986+00:00",
+      "device": "hue2.temperature",
+      "status": "20.68"
+    },
+    {
+      "timestamp": "2021-07-14T08:01:07.058713+00:00",
+      "device": "hue2.temperature",
+      "status": "20.54"
+    },
+    {
+      "timestamp": "2021-07-14T08:06:07.022636+00:00",
+      "device": "hue2.temperature",
+      "status": "20.68"
+    },
+    {
+      "timestamp": "2021-07-14T08:16:21.043363+00:00",
+      "device": "hue2.motion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-14T08:16:21.043749+00:00",
+      "device": "hue2.lightLevel",
+      "status": "23.25"
+    },
+    {
+      "timestamp": "2021-07-14T08:16:36.041719+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T08:21:22.058926+00:00",
+      "device": "hue2.lightLevel",
+      "status": "23.04"
+    },
+    {
+      "timestamp": "2021-07-14T08:26:02.054551+00:00",
+      "device": "hue2.temperature",
+      "status": "20.54"
+    },
+    {
+      "timestamp": "2021-07-14T08:26:17.029147+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.82"
+    },
+    {
+      "timestamp": "2021-07-14T08:26:22.026885+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T08:26:22.027111+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T08:26:22.056116+00:00",
+      "device": "light.livingRoom",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T08:31:17.032864+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.27"
+    },
+    {
+      "timestamp": "2021-07-14T08:33:49.653026+00:00",
+      "device": "window",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-14T08:33:50.260529+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "23.0"
+    },
+    {
+      "timestamp": "2021-07-14T08:36:17.052433+00:00",
+      "device": "hue2.lightLevel",
+      "status": "21.05"
+    },
+    {
+      "timestamp": "2021-07-14T08:41:17.059938+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.57"
+    },
+    {
+      "timestamp": "2021-07-14T08:51:00.059807+00:00",
+      "device": "hue2.temperature",
+      "status": "20.39"
+    },
+    {
+      "timestamp": "2021-07-14T08:51:15.041902+00:00",
+      "device": "hue2.lightLevel",
+      "status": "26.56"
+    },
+    {
+      "timestamp": "2021-07-14T08:56:00.044660+00:00",
+      "device": "hue2.temperature",
+      "status": "20.25"
+    },
+    {
+      "timestamp": "2021-07-14T08:56:15.043809+00:00",
+      "device": "hue2.lightLevel",
+      "status": "26.67"
+    },
+    {
+      "timestamp": "2021-07-14T09:01:15.058159+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.79"
+    },
+    {
+      "timestamp": "2021-07-14T09:04:58.150477+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "22.8"
+    },
+    {
+      "timestamp": "2021-07-14T09:06:15.043756+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.01"
+    },
+    {
+      "timestamp": "2021-07-14T09:09:31.097352+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:11:15.056827+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.13"
+    },
+    {
+      "timestamp": "2021-07-14T09:16:15.022863+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.24"
+    },
+    {
+      "timestamp": "2021-07-14T09:21:15.030487+00:00",
+      "device": "hue2.lightLevel",
+      "status": "24.69"
+    },
+    {
+      "timestamp": "2021-07-14T09:26:10.058589+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.35"
+    },
+    {
+      "timestamp": "2021-07-14T09:31:10.056795+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.46"
+    },
+    {
+      "timestamp": "2021-07-14T09:35:55.028463+00:00",
+      "device": "hue2.temperature",
+      "status": "20.39"
+    },
+    {
+      "timestamp": "2021-07-14T09:36:10.028581+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.01"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "automation.cameraOnWhenUserLeave",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "hue2.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "camera.status",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "huewhiteLamp2",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "light.livingRoom",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "radiatorThermostat.measuredTemperature",
+      "status": "22.8"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.01"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "hue2.temperature",
+      "status": "20.39"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "sun",
+      "status": "above_horizon"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "weather.homeLocation",
+      "status": "cloudy"
+    },
+    {
+      "timestamp": "2021-07-14T09:40:00+00:00",
+      "device": "weather.town",
+      "status": "cloudy"
+    },
+    {
+      "timestamp": "2021-07-14T09:41:10.056797+00:00",
+      "device": "hue2.lightLevel",
+      "status": "25.35"
+    },
+    {
+      "timestamp": "2021-07-14T09:45:56.040810+00:00",
+      "device": "hue2.temperature",
+      "status": "20.25"
+    },
+    {
+      "timestamp": "2021-07-14T09:46:11.027412+00:00",
+      "device": "hue2.lightLevel",
+      "status": "26.34"
+    },
+    {
+      "timestamp": "2021-07-14T09:46:26.042208+00:00",
+      "device": "hue2.lightLevel",
+      "status": "5.73"
+    }
+  ],
+  "evidence_devices": [
+    "automation.cameraOnWhenUserLeave",
+    "ceilingLamp",
+    "deskLamp",
+    "huewhiteLamp2",
+    "light.livingRoom"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_7782a7c568c3eb27",
+  "paired_id": "ARGUS_PRIME_160eab093cd0aa60",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home3",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}

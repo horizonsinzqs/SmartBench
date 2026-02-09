@@ -1,0 +1,340 @@
+{
+  "id": "ARGUS_PRIME_f61a0983b9b34d92",
+  "label": "anomaly",
+  "description": "In the night of a summer weekend. the system monitored 60 events across 20 devices within 1 hours and 30 minutes. Key activities include: motion detection, door/window state changes, lighting control, temperature monitoring. A total of 19 device state transitions occurred.",
+  "reasoning": "1. [LABEL]\n Label: anomaly\n Subtype: temporal - light_toggle_storm\n Time period: night, Season: summer\n\n2. [EVIDENCE]\n Evidence 1: Within a short period, the same light toggles repeatedly (about 4 toggles).\n - Related events: 5\n - Confidence: 88%\n\n3. [SCOPE NOTE]\n - This reasoning is based only on the provided IoT event trace and the evidence above.\n - It does not attribute intent or root causes beyond what is observable in the events.\n\n4. [CONFIDENCE]\n Confidence: 88%",
+  "context": {
+    "occupancy_type": "family_home_4_occupants",
+    "duration_days": 1,
+    "season": "summer",
+    "weather": null,
+    "day_type": "weekend",
+    "time_of_day": "night"
+  },
+  "events": [
+    {
+      "timestamp": "2021-07-11T00:41:10.678279+00:00",
+      "device": "humidity",
+      "status": "63.60"
+    },
+    {
+      "timestamp": "2021-07-11T00:41:50.640734+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "72"
+    },
+    {
+      "timestamp": "2021-07-11T00:42:36.035744+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:45:11.016455+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:47:16.037267+00:00",
+      "device": "hue.temperature",
+      "status": "21.17"
+    },
+    {
+      "timestamp": "2021-07-11T00:47:26.035237+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:47:31.427926+00:00",
+      "device": "humidity",
+      "status": "63.50"
+    },
+    {
+      "timestamp": "2021-07-11T00:47:41.035087+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:47:49.454995+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "87"
+    },
+    {
+      "timestamp": "2021-07-11T00:48:01.017790+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:48:34.415765+00:00",
+      "device": "humidity",
+      "status": "63.60"
+    },
+    {
+      "timestamp": "2021-07-11T00:48:56.035617+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:49:01.035004+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:49:37.741307+00:00",
+      "device": "humidity",
+      "status": "63.50"
+    },
+    {
+      "timestamp": "2021-07-11T00:49:41.017239+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:49:51.034106+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:01.034106+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:11.034106+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:16.036677+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:21.034106+00:00",
+      "device": "ceilingLamp",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:31.034106+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:36.016519+00:00",
+      "device": "deskLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:50:43.801586+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T00:51:06.019658+00:00",
+      "device": "ceilingLamp",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T00:53:48.457775+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "93"
+    },
+    {
+      "timestamp": "2021-07-11T00:59:47.174322+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "94"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "automation.dinnerLights",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "automation.lightsOnWhenMotionDetected",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "automation.lightsOffWhenTooBright",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "automation.lightsOffWhenNoMotion",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "hue.motionSensor.motion",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.wifiConnection",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.locked",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "person.home",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "94"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.activity",
+      "status": "still"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "phone.sleepSegment",
+      "status": "26280000.0"
+    },
+    {
+      "timestamp": "2021-07-11T01:00:00+00:00",
+      "device": "weather.town",
+      "status": "rainy"
+    },
+    {
+      "timestamp": "2021-07-11T01:07:50.593179+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:17:43.934242+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-07-11T01:23:30.152514+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:35:08.588487+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:35:12.820413+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "91"
+    },
+    {
+      "timestamp": "2021-07-11T01:39:20.246937+00:00",
+      "device": "weather.town",
+      "status": "unavailable"
+    },
+    {
+      "timestamp": "2021-07-11T01:39:22.676839+00:00",
+      "device": "weather.town",
+      "status": "rainy"
+    },
+    {
+      "timestamp": "2021-07-11T01:39:22.791656+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:39:22.792119+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:40:22.686892+00:00",
+      "device": "weather.town",
+      "status": "unavailable"
+    },
+    {
+      "timestamp": "2021-07-11T01:40:36.714837+00:00",
+      "device": "weather.town",
+      "status": "rainy"
+    },
+    {
+      "timestamp": "2021-07-11T01:40:36.830905+00:00",
+      "device": "door",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:40:36.831522+00:00",
+      "device": "window",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-07-11T01:41:12.103857+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "93"
+    },
+    {
+      "timestamp": "2021-07-11T01:51:54.463217+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T01:59:08.578330+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "94"
+    },
+    {
+      "timestamp": "2021-07-11T02:05:09.439678+00:00",
+      "device": "phone.sleepConfidence",
+      "status": "95"
+    },
+    {
+      "timestamp": "2021-07-11T02:06:54.478211+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-07-11T02:08:45.743216+00:00",
+      "device": "temperature",
+      "status": "23.40"
+    }
+  ],
+  "evidence_devices": [
+    "ceilingLamp"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_92a2da8876f5fac3",
+  "paired_id": "ARGUS_PRIME_00c571849cfedafb",
+  "anomaly_types": [
+    "temporal"
+  ],
+  "anomaly_details": [
+    {
+      "type": "temporal",
+      "subtype": "light_toggle_storm"
+    }
+  ],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home4",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "causal_chain",
+      "state_transition"
+    ]
+  }
+}

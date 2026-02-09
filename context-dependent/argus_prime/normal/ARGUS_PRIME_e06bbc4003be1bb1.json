@@ -1,0 +1,333 @@
+{
+  "id": "ARGUS_PRIME_e06bbc4003be1bb1",
+  "label": "normal",
+  "description": "During morning on a autumn weekday. the smart home system recorded 60 sensor events from 6 devices over 30 minutes. Key activities include: motion detection. A total of 54 device state transitions occurred.",
+  "reasoning": "1. [OBSERVATIONS]\n - Time period: morning, Season: autumn\n - Duration: 29.9 minutes\n - Devices involved: 6\n - Total events: 60\n\n2. [ANALYSIS]\n Device activity distribution:\n - humidity: 1 events\n - sound: 31 events\n - motion: 24 events\n - co2: 3 events\n - presence: 1 events\n State transitions: 54\n\n3. [EVIDENCE EVALUATION]\n Evidence 1: CO2 readings show a noticeable rising trend (can look suspicious in isolation).\n - Confidence: 72%\n Evidence 2: CO2 increases are common during meal-time/home activity and should be judged with temporal trends.\n - Confidence: 82%\n\n4. [EXCLUSION ANALYSIS]\n - Physical consistency check: PASSED\n - Causal reasonableness check: PASSED\n - Temporal coherence check: PASSED\n\n5. [CONCLUSION]\n Confidence: 90%\n Basis: All activity patterns are consistent with typical smart home usage",
+  "context": {
+    "occupancy_type": "single_room_shared_flat",
+    "duration_days": 1,
+    "season": "autumn",
+    "weather": null,
+    "day_type": "weekday",
+    "time_of_day": "morning"
+  },
+  "events": [
+    {
+      "timestamp": "2021-09-10T07:12:43.007699+00:00",
+      "device": "humidity",
+      "status": "57.90"
+    },
+    {
+      "timestamp": "2021-09-10T07:12:52.474459+00:00",
+      "device": "ipCamera.sound",
+      "status": "138.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:02.640569+00:00",
+      "device": "ipCamera.sound",
+      "status": "142.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:12.839579+00:00",
+      "device": "ipCamera.motion",
+      "status": "2.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:12.839794+00:00",
+      "device": "ipCamera.sound",
+      "status": "143.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:23.096032+00:00",
+      "device": "ipCamera.sound",
+      "status": "150.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:33.421690+00:00",
+      "device": "ipCamera.motion",
+      "status": "6.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:33.421869+00:00",
+      "device": "ipCamera.sound",
+      "status": "146.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:46.747788+00:00",
+      "device": "ipCamera.motion",
+      "status": "7.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:46.747975+00:00",
+      "device": "ipCamera.sound",
+      "status": "150.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:56.919598+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:13:56.919820+00:00",
+      "device": "ipCamera.sound",
+      "status": "148.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:06.818759+00:00",
+      "device": "co2.value",
+      "status": "413"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:07.149378+00:00",
+      "device": "ipCamera.motion",
+      "status": "16.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:07.149592+00:00",
+      "device": "ipCamera.sound",
+      "status": "186.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:16.878732+00:00",
+      "device": "co2.value",
+      "status": "412"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:17.513516+00:00",
+      "device": "ipCamera.motion",
+      "status": "4.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:17.513703+00:00",
+      "device": "ipCamera.sound",
+      "status": "176.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:27.908315+00:00",
+      "device": "ipCamera.motion",
+      "status": "63.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:27.908498+00:00",
+      "device": "ipCamera.sound",
+      "status": "149.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:38.093387+00:00",
+      "device": "ipCamera.motion",
+      "status": "8.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:38.093717+00:00",
+      "device": "ipCamera.sound",
+      "status": "142.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:47.064542+00:00",
+      "device": "co2.value",
+      "status": "413"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:48.365834+00:00",
+      "device": "ipCamera.motion",
+      "status": "4.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:48.366014+00:00",
+      "device": "ipCamera.sound",
+      "status": "150.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:58.628984+00:00",
+      "device": "ipCamera.motion",
+      "status": "26.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:14:58.629192+00:00",
+      "device": "ipCamera.sound",
+      "status": "143.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:08.884655+00:00",
+      "device": "ipCamera.motion",
+      "status": "2.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:08.884859+00:00",
+      "device": "ipCamera.sound",
+      "status": "142.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:19.096640+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:19.096843+00:00",
+      "device": "ipCamera.sound",
+      "status": "143.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:29.369223+00:00",
+      "device": "ipCamera.sound",
+      "status": "180.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:39.640361+00:00",
+      "device": "ipCamera.sound",
+      "status": "161.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:49.905400+00:00",
+      "device": "ipCamera.motion",
+      "status": "2.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:15:49.905630+00:00",
+      "device": "ipCamera.sound",
+      "status": "146.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:00.173686+00:00",
+      "device": "ipCamera.motion",
+      "status": "3.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:00.173869+00:00",
+      "device": "ipCamera.sound",
+      "status": "136.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:10.422332+00:00",
+      "device": "ipCamera.sound",
+      "status": "140.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:20.628842+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:20.629024+00:00",
+      "device": "ipCamera.sound",
+      "status": "146.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:30.782722+00:00",
+      "device": "ipCamera.sound",
+      "status": "147.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:40.959696+00:00",
+      "device": "ipCamera.sound",
+      "status": "156.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:16:51.146684+00:00",
+      "device": "ipCamera.sound",
+      "status": "148.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:01.317056+00:00",
+      "device": "ipCamera.motion",
+      "status": "4.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:01.317259+00:00",
+      "device": "ipCamera.sound",
+      "status": "164.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:11.532301+00:00",
+      "device": "ipCamera.motion",
+      "status": "2.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:11.532518+00:00",
+      "device": "ipCamera.sound",
+      "status": "149.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:21.709304+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:21.709510+00:00",
+      "device": "ipCamera.sound",
+      "status": "146.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:31.902328+00:00",
+      "device": "ipCamera.motion",
+      "status": "2.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:31.902533+00:00",
+      "device": "ipCamera.sound",
+      "status": "144.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:32.917755+00:00",
+      "device": "phone.atHome",
+      "status": "home"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:42.073102+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:42.073256+00:00",
+      "device": "ipCamera.sound",
+      "status": "138.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:52.309198+00:00",
+      "device": "ipCamera.motion",
+      "status": "5.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:17:52.309385+00:00",
+      "device": "ipCamera.sound",
+      "status": "140.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:18:02.546204+00:00",
+      "device": "ipCamera.motion",
+      "status": "1.0"
+    },
+    {
+      "timestamp": "2021-09-10T07:36:04.593658+00:00",
+      "device": "ipCamera.motionActive",
+      "status": "on"
+    },
+    {
+      "timestamp": "2021-09-10T07:36:25.163382+00:00",
+      "device": "ipCamera.motionActive",
+      "status": "off"
+    },
+    {
+      "timestamp": "2021-09-10T07:42:34.396360+00:00",
+      "device": "ipCamera.sound",
+      "status": "151.0"
+    }
+  ],
+  "evidence_devices": [
+    "co2.value"
+  ],
+  "pair_id": "ARGUS_PRIME_PAIR_86b9f39e1b4fafeb",
+  "paired_id": "ARGUS_PRIME_9653fee57f05911d",
+  "anomaly_types": [],
+  "anomaly_details": [],
+  "metadata": {
+    "dataset": "argus_prime",
+    "source_home": "Home1",
+    "context_dependency_types": [
+      "temporal_sequence",
+      "duration",
+      "accumulation",
+      "state_transition"
+    ]
+  }
+}
