@@ -1,0 +1,29 @@
+Analyze the device states and determine whether they represent a NORMAL or ANOMALY situation.
+
+Input Format:
+- Environment Context: the public object "environment_context" with time, time of day, day of week, weekend flag, season, weather, outdoor temperature, natural light level, occupants at home
+- Device States: the public object "device_states", represented as key-value pairs including:
+  * Categorical states: on/off, open/closed, locked/unlocked, motion_detected/no_motion, armed/disarmed/triggered, heat/cool/off (thermostat mode), heating/cooling/idle (HVAC status), recording/standby/offline
+  * Numeric values: temperature (°C), humidity (%), thermostat target temperature (°C)
+
+Output Format (JSON only):
+{
+  "reasoning": "short explanation grounded in the visible snapshot",
+  "label": "normal" or "anomaly",
+  "evidence_devices": ["device1", "device2", ...]
+}
+
+Example outputs:
+{
+  "reasoning": "Night time, 1 occupant at home. All lights off, no motion detected. Doors locked, temperature 22°C. Consistent sleeping state.",
+  "label": "normal",
+  "evidence_devices": []
+}
+
+{
+  "reasoning": "Temperature sensor reading -50°C. Value physically impossible for indoor environment. Sensor malfunction detected.",
+  "label": "anomaly",
+  "evidence_devices": ["Living Room Temperature"]
+}
+
+Return ONLY the JSON object.
