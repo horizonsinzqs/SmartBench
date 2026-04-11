@@ -2,9 +2,7 @@
 
 SmartBench is a benchmark for evaluating LLM anomaly understanding in smart home environments.
 
-## Experiment Entry Points
-
-Minimal small-experiment scripts are organized under `experiments/`.
+Experiment scripts are provided in `SmartBench/experiments/`.
 
 ## Prompt Templates
 
