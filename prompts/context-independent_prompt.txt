@@ -8,20 +8,20 @@ Input Format:
 
 Output Format (JSON only):
 {
-  "reasoning": "short explanation grounded in the visible snapshot",
+  "analysis_chain": ["step 1", "step 2", ...],
   "label": "normal" or "anomaly",
   "evidence_devices": ["device1", "device2", ...]
 }
 
 Example outputs:
 {
-  "reasoning": "Night time, 1 occupant at home. All lights off, no motion detected. Doors locked, temperature 22°C. Consistent sleeping state.",
+  "analysis_chain": ["Night time, 1 occupant at home", "All lights off, no motion detected", "Doors locked, temperature 22°C", "Consistent sleeping state"],
   "label": "normal",
   "evidence_devices": []
 }
 
 {
-  "reasoning": "Temperature sensor reading -50°C. Value physically impossible for indoor environment. Sensor malfunction detected.",
+  "analysis_chain": ["Temperature sensor reading -50°C", "Value physically impossible for indoor environment", "Sensor malfunction detected"],
   "label": "anomaly",
   "evidence_devices": ["Living Room Temperature"]
 }

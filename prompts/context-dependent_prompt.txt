@@ -1,14 +1,13 @@
 Analyze the time-series sensor events and determine whether they represent a NORMAL or ANOMALY situation.
 
 Input:
-- Description (if present): the public field "description"
 - Context: the public object "context"
 - Sensor Events: the time-ordered objects under the public field "events"
 
 Rules:
-- The JSON object MUST contain exactly these keys: "reasoning", "label", "evidence_devices".
+- The JSON object MUST contain exactly these keys: "analysis_chain", "label", "evidence_devices".
 - "label" MUST be exactly "normal" or "anomaly".
-- "reasoning": a concise explanation. The final sentence MUST be the final conclusion.
+- "analysis_chain": an array of concise reasoning steps. The final step MUST be the final conclusion.
 - "evidence_devices": device/entity names EXACTLY as they appear in Sensor Events (the `device` field); at most 8 items.
 - If label is "normal", set "evidence_devices" to [].
 - If label is "anomaly", "evidence_devices" MUST be non-empty and include the smallest set of devices necessary to justify the anomaly.
@@ -16,13 +15,13 @@ Rules:
 
 Example outputs:
 {
-  "reasoning": "Night time. No unusual activity. Conclusion: normal.",
+  "analysis_chain": ["Night time", "No unusual activity", "Conclusion: normal"],
   "label": "normal",
   "evidence_devices": []
 }
 
 {
-  "reasoning": "Temp sensor -50°C. Impossible indoors. Conclusion: anomaly.",
+  "analysis_chain": ["Temp sensor -50°C", "Impossible indoors", "Conclusion: anomaly"],
   "label": "anomaly",
   "evidence_devices": ["hue.temperature"]
 }
